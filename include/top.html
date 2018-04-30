@@ -8,14 +8,33 @@
 <head>
 <title><!--#echo encoding="none" var="TITLE" --></title>
 <link rev="made" href="mailto:<!--#echo encoding="url" var="SERVER_ADMIN" -->" />
-<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
-    body { color: #000000; background-color: #FFFFFF; }
-    a:link { color: #0000CC; }
-    p, address {margin-left: 3em;}
-    span {font-size: smaller;}
-/*]]>*/--></style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="noarchive" name="robots" />
+<link href="/favicon.ico" rel="shortcut icon" />
+<link href="/error/include/layout/style.css" media="screen,projection" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/error/include/layout/jquery.min.js"></script>
+<script type="text/javascript" src="/error/include/layout/script.js"></script>
 </head>
-
 <body>
-<h1><!--#echo encoding="none" var="TITLE" --></h1>
-<p>
+  <div>
+    <div id="commandbar">
+      <a href="http://<!--#echo var="SERVER_NAME" -->/" id="home" name="home">home</a>
+	    <a href="http://<!--#echo var="SERVER_NAME" -->/" id="parent" style="display: none;" name="parent">up</a>
+	    <a href="http://<!--#echo var="SERVER_NAME" -->/#" id="refresh" name="refresh">refresh</a>
+    </div> 
+    <div id="files">
+      <h2>Code: <!--#echo encoding="none" var="REDIRECT_STATUS" --></h2>
+      <table>
+        <tbody>
+          <tr class="">
+            <th class="icon"></th>
+            <th><!--#echo encoding="none" var="TITLE" --></th>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr class="">
+            <td valign="top" class="name">
+              <img src="/error/include/layout/img/description.gif" width="16"height="16" />
+            </td>
+            <td class="name">
